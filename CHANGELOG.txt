@@ -1,0 +1,12 @@
+Catgames: DELUXE - Changelogs
+v5.0 - The Update I Never Thought Would Happen Update:
+	- Added Modpacks and Forge API to Minecraft Java Web (these take a while to load even on my gaming PC, so please be patient :D)
+	- Added the rest of the Vanilla Minecraft Java Web versions to the Search bar in the MC Launcher + Home Menu
+	- Removed the Weather stub, that's blocked on these computers
+	- Removed the non-functional versions of Minecraft Java in the MC Launcher
+	- Removed the Music Player, was never used (if you'd still like to listen, view the mp3 files in the music folder)
+	- Fixed the pre-existing Java versions in the Search Bar all linking to Release 1.5.2
+	- Updated the Outlook icon to match the 2025 / 2026 rebrand
+	- Renamed the original Blackjack version to "Blackjack (legacy)"
+	- Removed Blackjack Legacy from the "Featured Games" list
+	- Updated Version Info (v4.0 -> v5.0)

@@ -1,0 +1,165 @@
+* {
+	font-family: "Varela Round", Varela Round;
+	color: white;
+}
+
+body {
+	background: #11111b;
+}
+
+h1 {
+	font-size:	32px;
+}
+
+h3 {
+	font-size:	24px;
+}
+
+.notes {
+	position: fixed;
+	bottom: 4;
+	right: 16;
+	text-align: right;
+}
+
+.center {
+	text-align: center;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.center img {
+	width: 50%;
+	text-align: center;
+	margin-left: auto;
+    margin-right: auto;
+	object-fit: contain;
+}
+
+.mainpage {
+	padding:	32px;
+}
+
+.sidebar {
+	position: fixed;
+	right: 0; /* Aligns the right edge of the div with the right edge of the viewport */
+	top: 16; /* Or specify a different top position if needed */
+	width: 15%;
+	height: 100%;
+	
+	background: #181825;
+	overflow: hidden;
+	
+	padding: 8px;
+	
+	border-radius: 32px 0px 0px 0px; /* Different radii for each corner */
+	
+	text-align: right;
+}
+
+.topnav {
+	position: fixed;
+	background: #181825;
+	overflow: hidden;
+	
+	border-radius: 32px;
+}
+
+.topnav a {
+	float: left;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+	
+	height: 100%;
+}
+
+.topnav a:hover {
+	background: #313244;
+}
+
+.topnav a.active {
+	background: #1e1e2e;
+	color: white;
+}
+
+.imagegrid {
+	list-style-type: none; /* Removes bullet points */
+	margin: 0; /* Removes default outer spacing */
+    padding: 0; /* Removes default inner spacing */
+}
+
+.imagegrid li {
+	display: inline-block;
+}
+
+.imagegrid img {
+	border-radius: 16px;
+	padding: 8px;
+}
+
+ /* Style the search box */
+#mySearch {
+  width: 100%;
+  font-size: 18px;
+  padding: 11px;
+  border: 2px solid #ddd;
+  
+  border-radius: 32px;
+  
+  background: #313244;
+  color: white;
+}
+
+button {
+  font-size: 18px;
+  padding: 11px;
+  border: 2px solid #ddd;
+  
+  border-radius: 32px;
+  
+  background: #313244;
+  color: white;
+  
+  width: 40%;
+}
+
+/* Style the navigation menu */
+#myMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Style the navigation links */
+#myMenu li a {
+  padding: 12px;
+  text-decoration: none;
+  display: block;
+  border-radius: 32px;
+}
+
+#myMenu li a:hover {
+  background-color: #313244;
+} 
+
+hr {
+	color: #313244;
+}
+
+#fullPageOverlay {
+	position: fixed; /* Ensures it covers the entire viewport */
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #11111b;
+	z-index: 9999; /* Ensures it's on top of other content */
+	display: none; /* Initially hidden */
+	justify-content: center; /* Center content horizontally */
+	align-items: center; /* Center content vertically */
+	color: white; /* Text color for overlay content */
+	text-align: center;
+}

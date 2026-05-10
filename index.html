@@ -1,86 +1,39 @@
-<!-- You notice a cat sleeping and decide to go pet it. -->
-<!-- Seems like your work of opening this in Notepad has paid off... -->
-
-<!-- Thanks for using Catgames :) -->
-<!DOCTYPE HTML>
-
-<html lang="en">
+<!DOCTYPE HTMl>
+<html>
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Mail - Microsoft Outlook</title>
-		<link rel="icon" type="image/x-icon" href="favicon.ico">
+		<title>Catgames</title>
 		
-		<link rel="stylesheet" href="main.css"/>
+		<link rel="stylesheet" href="main.css">
+		<link rel="icon" type="image/x-icon" href="./main.ico">
 		
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
-		
-		<script>
-		function searchFilter() {
-		  // Declare variables
-		  var input, filter, ul, li, a, i;
-		  input = document.getElementById("mySearch");
-		  filter = input.value.toUpperCase();
-		  ul = document.getElementById("myMenu");
-		  li = ul.getElementsByTagName("li");
-
-		  // Loop through all list items, and hide those who don't match the search query
-		  for (i = 0; i < li.length; i++) {
-			a = li[i].getElementsByTagName("a")[0];
-			if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-			  li[i].style.display = "";
-			} else {
-			  li[i].style.display = "none";
-			}
-		  }
-		}
-		</script>
+		<meta charset="utf-8">
+		<meta name="description" content="The silliest and goofiest games website out there...">
 	</head>
 	<body>
-		<!--<div class="topnav">
-			<a class="active">Home</a>
-		</div>-->
-
-		<div class="background">
-			<div class="mainpage">
+		<div class="home_main">
+			<div class="home_mini">
+				<h1>CatgamesREM</h1>
+				<p id="randText">If you're seeing this, you have JavaScript disabled or my code broke, PLEASE enable it!</p>
 				<br>
-				<img class="center" src="logo.png"></img>
-				<h3>Originally known as simply "Catgames"</h3>
-				<p>did you know I like cats</p>
-				<hr>
-				<h2>Featured Games</h2>
-				<ul class="imagegrid">
-					<li> <a href="./games/slope.html"> <img width="128" height="128" src="./icons/slope.png"></img> </a> </li>
-					<li> <a href="./games/cc/index.html"> <img width="128" height="128" src="./icons/cc.png"></img> </a> </li>
-					<li> <a href="https://www.google.com/search?q=google+snake"> <img width="128" height="128" src="./icons/snake.png"></img> </a> </li>
-					<li> <a href="./minecraft.html"> <img width="128" height="128" src="./icons/minecraft.png"></img> </a> </li>
-					<li> <a href="./games/mania/RSDKv5.html"> <img width="128" height="128" src="./icons/mania.jpg"></img> </a> </li>
-					<li> <a href="./games/tetris/index.html"> <img width="128" height="128" src="./icons/tetoris.png"></img> </a> </li>
-					<li> <a href="./games/sandboxels/index.html"> <img width="128" height="128" src="./icons/sandboxels.png"></img> </a> </li>
-					<li> <a href="./games/silk/index.html"> <img width="128" height="128" src="./icons/silk.png"></img> </a> </li>
-					<li> <a href="https://www.google.com/search?q=google+minesweeper"> <img width="128" height="128" src="./icons/msweep.png"></img> </a> </li>
-					<li> <a href="https://www.google.com/search?q=google+solitaire"> <img width="128" height="128" src="./icons/solitaire.png"></img> </a> </li>
-					<li> <a href="./games/mario64.html"> <img width="128" height="128" src="./icons/mario64.png"></img> </a> </li>
-					<li> <a href="./games/stickmanhook.html"> <img width="128" height="128" src="./icons/stickmanhook.jpg"></img> </a> </li>
-					<li> <a href="./games/s2cc/index.html"> <img width="128" height="128" src="./icons/sonic2.png"></img> </a> </li>
-				</ul>
-				
-			<hr>
-			
-			<p class="notes"><h3>Notes & Acknowledgements</h3>
-			<b>Catgames - by wushroomnimbus<br>
-			Panic Button key is [CTRL + S]</b><br> <br>
-			Press [ESC] on the Sonic Mania title screen to avoid the Main Menu game crash.<br>
-			Sonic Mania + Sonic 2 Ports created by BurntPopcorn<br>
-			Torus (the website's main font) courtesy of osu!laser Developers + Paulo Goode<br>
-			</p>
+				<a href="games.html">
+				<button>
+					<span class="shadow"></span>
+					<span class="front text">
+						Start Playing!
+					</span>
+				</button>
+				</a>
 			</div>
+			
+			<br>
+
+			<a href="./credits.html">Site Credits & Attribution</a>
+			<p>I like to call this the 'REM' branch, because it's my third and final revision on here</p>
 		</div>
 		
+		<p class="notes">Made with 💙 by <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0">wushroomnimbus</a><br>[CTRL] + [S] is your Panic Button</p>
+		
 		<script src="./panic.js"></script>
+		<script src="./randmsg.js"></script>
 	</body>
 </html>
-
-<!-- Transgender rights!! -->

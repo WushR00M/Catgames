@@ -1,125 +1,162 @@
 @font-face {
 	font-family: 'Torus';
-	src: url('assets/Torus Regular.otf') format('opentype');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@view-transition {
-	navigation: auto;
-}
-
-* {
-	font-family: "Torus", Torus;
-	color: white;
-}
-
-html { scrollbar-width: none; height: 100%; } /* Firefox */
-body { -ms-overflow-style: none; } /* IE and Edge */
-body::-webkit-scrollbar, body::-webkit-scrollbar-button { display: none; } /* Chrome */
-
-body {
-	background: #17020b;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/background.png");
-	background-size: cover;
-	background-position: center; /* Centers the image to avoid cropping only one side */
-	background-repeat: no-repeat; /* Prevents the image from tiling */
-}
-
-.background {
-	background: transparent;
-	width: 100%;
-	height: 100%;
-	z-index: -1;
+	src: url('assets/mainFont.otf') format('opentype');
 }
 
 h1 {
-	font-size:	32px;
-	font-weight: normal;
+	text-shadow: #037bfc 0px 0px 30px;
 }
 
-h3 {
-	font-size:	24px;
-	font-weight: normal;
+a {
+	text-shadow: #037bfc 0px 0px 20px;
+	color: #6eb4ff;
+	transition: color 0.3s ease;
+}
+
+a:hover {
+	color: #FFFFFF;
+}
+
+.home_main {
+	padding-top: 48px;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+}
+
+.home_mini {
+	backdrop-filter: 	blur(8px);
+	border-style:		solid;
+	border-color:		rgba(0, 0, 0, .5);
+	width: 50%;
+	margin: 0 auto;
+	color:			#FFFFFF;
+	flex-wrap: 		wrap; 
+	border-radius: 	32px;
+	width:			50%;
+	background-color: rgba(0, 0, 0, .25);
+	padding: 20px;
+}
+
+button {
+	font-family: 'Torus', Torus;
+	position: relative;
+	border: none;
+	background: transparent;
+	padding: 0;
+	cursor: pointer;
+	outline-offset: 4px;
+	transition: filter 250ms;
+	user-select: none;
+	touch-action: manipulation;
+}
+
+.shadow {
+	position: absolute;
+	box-shadow: #037bfc 0px 0px 50px;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 12px;
+	background: hsl(0deg 0% 0% / 0.25);
+	will-change: transform;
+	transform: translateY(2px);
+	transition: transform
+		600ms
+		cubic-bezier(.3, .7, .4, 1);
+}
+
+.front {
+	 display: block;
+	 position: relative;
+	 padding: 12px 27px;
+	 border-radius: 12px;
+	 font-size: 1.1rem;
+	 color: white;
+	 background: #037bfc;
+	 will-change: transform;
+	 transform: translateY(-4px);
+	 transition: transform
+		600ms
+		cubic-bezier(.3, .7, .4, 1);
+}
+
+button:hover {
+	filter: brightness(110%);
+}
+
+button:hover .front {
+	 transform: translateY(-6px);
+	 transition: transform
+		250ms
+		cubic-bezier(.3, .7, .4, 1.5);
+}
+
+button:active .front {
+	transform: translateY(-2px);
+	transition: transform 34ms;
+}
+
+button:hover .shadow {
+	transform: translateY(4px);
+	transition: transform
+		250ms
+		cubic-bezier(.3, .7, .4, 1.5);
+}
+
+button:active .shadow {
+	transform: translateY(1px);
+	transition: transform 34ms;
+}
+
+button:focus:not(:focus-visible) {
+	outline: none;
 }
 
 .notes {
 	position: fixed;
-	bottom: 4;
-	left: 16;
-	text-align: left;
-}
-
-.center {
+	bottom: 0;
+	left: 0;
+	width: 100%;
 	text-align: center;
-	margin-left: auto;
-    margin-right: auto;
 }
 
-.center img {
-	width: 50%;
-	text-align: center;
-	margin-left: auto;
-    margin-right: auto;
-	object-fit: contain;
-}
-
-.mainpage {
-	padding:	32px;
-}
-
-.sidebar {
-	position: fixed;
-	right: 0; /* Aligns the right edge of the div with the right edge of the viewport */
-	top: 16; /* Or specify a different top position if needed */
-	width: 15%;
+html {
+	width: 100%;
 	height: 100%;
-	z-index: 1;
+	justify-content: center;
+	align-items: center;
 	
-	background: #2b0716;
-	overflow: hidden;
-	
-	padding: 8px;
-	
-	border-radius: 32px 0px 0px 0px; /* Different radii for each corner */
-	
-	text-align: right;
-	
-	transform: translateX(90%);
-
-	transition: transform 0.2s ease;
-}
-
-.sidebar:hover {
-	transform: translateX(0);
-}
-
-.topnav {
-	position: fixed;
-	background: #2b0716;
-	overflow: hidden;
-	
-	border-radius: 32px;
-}
-
-.topnav a {
-	float: left;
+	font-family: 'Torus', Torus;
+	background-color: #212121;
 	color: white;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-	font-size: 17px;
-	
-	height: 100%;
+
+	background: #121212;
+	background: linear-gradient(
+		135deg,
+		#121212 25%,
+		#1a1a1a 25%,
+		#1a1a1a 50%,
+		#121212 50%,
+		#121212 75%,
+		#1a1a1a 75%,
+		#1a1a1a
+	);
+	background-size: 40px 40px;
+
+	animation: move 4s linear infinite;
 }
 
-.topnav a:hover {
-	background: #400920;
-}
-
-.topnav a.active {
-	background: #47142a;
-	color: white;
+@keyframes move {
+	0% {
+		background-position: 0 0;
+	}
+	100% {
+		background-position: 40px 40px;
+	}
 }
 
 .imagegrid {
@@ -139,72 +176,6 @@ h3 {
 }
 
 .imagegrid img:hover {
-  transform: scale(1.1); 
-}
-
- /* Style the search box */
-#mySearch {
-	width: 100%;
-	font-size: 18px;
-	padding: 11px;
-	border: 2px solid rgba(255, 255, 255, 0.5); /* 50% transparent white */
-  
-	border-radius: 32px;
-  
-	background: #400920;
-	color: white;
-}
-
-button {
-	font-size: 18px;
-	padding: 11px;
-	border: 2px solid #ddd;
-  
-	border-radius: 32px;
-  
-	background: #400920;
-	color: white;
-  
-	width: 40%;
-}
-
-/* Style the navigation menu */
-#myMenu {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-/* Style the navigation links */
-#myMenu li a {
-	padding: 12px;
-	text-decoration: none;
-	display: block;
-	border-radius: 32px;
-	transform: translateX(5%);
-	transition: transform 0.2s ease;
-}
-
-#myMenu li a:hover {
-	background-color: #47142a;
-	transform: translateX(0);
-} 
-
-hr {
-	color: #2b0716;
-}
-
-#fullPageOverlay {
-	position: fixed; /* Ensures it covers the entire viewport */
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: #1f020e;
-	z-index: 9999; /* Ensures it's on top of other content */
-	display: none; /* Initially hidden */
-	justify-content: center; /* Center content horizontally */
-	align-items: center; /* Center content vertically */
-	color: white; /* Text color for overlay content */
-	text-align: center;
+	transform: scale(1.1);
+	border-color: white;
 }
